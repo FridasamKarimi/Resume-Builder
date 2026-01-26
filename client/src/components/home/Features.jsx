@@ -1,20 +1,27 @@
 import React from 'react'
+import { Zap } from 'lucide-react'
+import Title from './Title'
+
+
 
 const Features = () => {
     const [isHover, setIsHover] = React.useState(false);
   return (
     <div id='features' className='flex flex-col items-center my-10
     scroll-mt-12'>
-        // add badge and title
-         <div className="flex items-center gap-2 text-sm text-green-600 bg-green-400/10 rounded-full px-6 py-1.5">
-            
-            <span>Responded to 99% applicants</span>
+   
+         <div className="flex items-center gap-2 text-sm text-green-600 
+         bg-green-400/10 rounded-full px-6 py-1.5">
+            <Zap width={14} />
+            <span>Simple Process </span>
         </div>
+        <Title title='Build Your Professional Resume in minutes' description='Our streamlined process helps you create
+        a professional resume in minutes with intelligent AI-powered tools and features.' />
 
 
-            <div className="flex flex-col md:flex-row items-center justify-center">
+            <div className="flex flex-col md:flex-row items-center justify-center x1:-mt-10">
                 <img className="max-w-2xl w-full xl:-ml-32" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/features/group-image-1.png" alt="" />
-                <div className="px-4 md:px-0" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+               <div className="px-4 md:px-0" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
                     <div className={"flex items-center justify-center gap-6 max-w-md group cursor-pointer"}>
                         <div className={`p-6 group-hover:bg-violet-100 border border-transparent group-hover:border-violet-300  flex gap-4 rounded-xl transition-colors ${!isHover ? 'border-violet-300 bg-violet-100' : ''}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6 stroke-violet-600"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /><circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /></svg>
